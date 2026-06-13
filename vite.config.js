@@ -1,5 +1,12 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // your configuration here
+  base: './',
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: 'index.html',
+    },
+  },
+  publicDir: false, // since files are in root
 });

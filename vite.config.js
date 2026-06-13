@@ -7,6 +7,6 @@ export default defineConfig({
     rollupOptions: {
       input: 'index.html',
     },
+    assetsInlineLimit: 0, // don't inline large files
   },
-  publicDir: false, // since files are in root
 });
